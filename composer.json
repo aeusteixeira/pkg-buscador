@@ -36,5 +36,8 @@
         "cs": "Roda o PHP Code Sniffer para validar o código",
         "phan": "Roda o Phan para validar o código",
         "check": "Roda todos os scripts de validação de código"
-    }
+    },
+    "bin": [
+        "index.php"
+    ]
 }
