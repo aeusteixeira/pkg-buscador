@@ -1,0 +1,40 @@
+{
+    "name": "aeusteixeira/buscador",
+    "description": "Buscador de dados na web",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aeusteixeira\\Buscador\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matheus Teixeira",
+            "email": "contato.matheusteixeira@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "^6.3",
+        "guzzlehttp/guzzle": "^7.7",
+        "symfony/css-selector": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10",
+        "squizlabs/php_codesniffer": "*",
+        "phan/phan": "^5.4"
+    },
+    "scripts": {
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@cs",
+            "@phan"
+        ]
+    },
+    "scripts-descriptions": {
+        "cs": "Roda o PHP Code Sniffer para validar o código",
+        "phan": "Roda o Phan para validar o código",
+        "check": "Roda todos os scripts de validação de código"
+    }
+}
